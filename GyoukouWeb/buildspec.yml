@@ -19,7 +19,9 @@ phases:
       - echo "Build completed on `date`"
 
 artifacts:
+  base-directory: GyoukouWeb
   files:
     - '**/*'
+    - '!node_modules/**'
   discard-paths: yes
   name: output.zip
