@@ -1,0 +1,27 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 16
+    commands:
+      - echo "Installing dependencies..."
+      - cd "./GyoukouWeb"
+      - npm install
+  pre_build:
+    commands:
+      - echo "Running tests..."
+      - npm start & 
+      - sleep 5
+      - pgrep -f "app.js" | xargs kill
+  post_build:
+    commands:
+      - echo "Build completed on `date`"
+
+artifacts:
+  base-directory: GyoukouWeb
+  name: output.zip
+  files:
+    - '**/*'
+    - '!node_modules/**'
+  discard-paths: no
