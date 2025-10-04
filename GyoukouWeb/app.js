@@ -3,7 +3,7 @@ const express = require('express');
 
 // 创建一个 express 应用实例
 const app = express();
-const port = 3000;
+const port = 80;
 
 // 定义一个路由，当访问根路径 "/" 时执行
 /* app.get('/', (req, res) => {
