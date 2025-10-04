@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /home/ec2-user/GyoukouWeb
-npm install
+cd /home/ec2-user/GyoukouWebs
+sudo npm install
