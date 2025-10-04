@@ -20,8 +20,8 @@ phases:
 
 artifacts:
   base-directory: GyoukouWeb
+  name: output.zip
   files:
     - '**/*'
     - '!node_modules/**'
   discard-paths: yes
-  name: output.zip
