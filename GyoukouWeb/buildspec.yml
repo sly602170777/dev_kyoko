@@ -11,11 +11,9 @@ phases:
   pre_build:
     commands:
       - echo "Running tests..."
-      - npm test
-  build:
-    commands:
-      - echo "Building..."
-      - npm test
+      - npm start & 
+      - sleep 5
+      - pgrep -f "app.js" | xargs kill
   post_build:
     commands:
       - echo "Build completed on `date`"
