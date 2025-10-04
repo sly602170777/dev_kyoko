@@ -3,7 +3,7 @@ const http = require('http');
 
 // 定义服务器的监听主机名和端口
 const hostname = '127.0.0.1'; // 或者 'localhost'
-const port = 80;
+const port = 3000;
 
 // 创建一个 HTTP 服务器
 const server = http.createServer((req, res) => {
