@@ -4751,7 +4751,14 @@ section.footer footer .footer-copyright {
     }
 }
 
-
+.strength-arrow-icon {
+  margin: 0 auto;
+  transform: scaleX(-1);
+  background: linear-gradient(to right, #2FDCDC, #3072D5);
+  height: calc(tan(60deg) * 55px / 2);
+  width: 104px;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
 
 /************************************************************
 SCREEN SP
